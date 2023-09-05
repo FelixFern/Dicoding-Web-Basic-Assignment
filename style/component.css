@@ -1,0 +1,66 @@
+:root { 
+    --main: #FAF9F6;
+    --pure-white: #FFFFFF;
+    --accent1: #FF6969;
+    --accent2: #BB2525;
+    --dark: #141E46;
+    --layout-width-large: 80vw;
+    --layout-width-medium: 85vw;
+    --layout-width-small: 90vw;
+}
+
+.button-primary {
+    cursor: pointer;
+    transition: 0.5s ease;
+    background-color: var(--accent1);
+    color: var(--pure-white);
+    box-shadow: none;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+}
+.button-primary:hover {
+    transition: 0.5s ease;
+    opacity: .8;
+}
+
+.button-secondary {
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s ease;
+    background-color: transparent;
+    border: 1px solid var(--accent1);
+    color: var(--accent1);
+    box-shadow: none;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+}
+.button-secondary:hover {
+    transition: 0.5s ease;
+    background-color: var(--accent1);
+    color: var(--pure-white);
+    opacity: .8;
+}
+
+.button-text {
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s ease;
+    background-color: transparent;
+    color: var(--accent1);
+    border: 1px solid transparent;
+    box-shadow: none;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+}
+.button-text:hover {
+    transition: 0.5s ease;
+    border: 1px solid var(--accent1);
+    opacity: .8;
+}

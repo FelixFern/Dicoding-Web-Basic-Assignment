@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3&display=swap');
+
+:root { 
+    --main: #FAF9F6;
+    --pure-white: #FFFFFF;
+    --accent1: #FF6969;
+    --accent2: #BB2525;
+    --dark: #141E46;
+    --layout-width-large: 80vw;
+    --layout-width-medium: 85vw;
+    --layout-width-small: 90vw;
+}
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--dark);
+    font-family: 'Playfair Display', serif;
+}
+
+p, a {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+body {
+    background-color: var(--main);
+}
+
+/* Main Container */
+.main-container {
+    margin: auto;
+}
+
+.header-container {
+    width: calc(100vw - 8rem);    
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.header-container > * {
+    flex: 1;
+}
+
+.header-container .navbar-menu {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.header-container .navbar-menu a {
+    text-decoration: none;
+    color: var(--dark);
+} 
+.header-container .navbar-menu a:hover {
+    text-decoration: none;
+    color: var(--accent1);
+} 
+
+.header-container .cta-button {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 0.5rem;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    .main-container {
+        width: var(--layout-width-small);
+    }
+
+    .header-container .navbar {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .main-container {
+        width: var(--layout-width-medium);
+    }
+
+    .header-container .navbar {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    .main-container {
+        width: var(--layout-width-large);
+    }
+
+    .header-container .navbar {
+        display: block;
+    }
+}
