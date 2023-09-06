@@ -1,38 +1,43 @@
 :root { 
-    --main: #FAF9F6;
+    --main: #ece1d1;
     --pure-white: #FFFFFF;
-    --accent1: #FF6969;
-    --accent2: #BB2525;
-    --dark: #141E46;
+    --brown1: #dbc1ac;
+    --brown2: #967259;
+    --brown3: #624831;
+    --brown4: #382210;
+    --dark: #1f1f1f;
     --layout-width-large: 80vw;
     --layout-width-medium: 85vw;
     --layout-width-small: 90vw;
 }
 
 .button-primary {
+    transition: 0.25s ease-in-out;
     cursor: pointer;
     transition: 0.5s ease;
-    background-color: var(--accent1);
+    background-color: var(--brown3);
+    border: 1px solid var(--brown3);
     color: var(--pure-white);
     box-shadow: none;
-    border: none;
-    padding: 0.5rem 1.25rem;
+    padding: 0.5rem 1rem;
     font-size: 0.9rem;
     font-weight: bold;
     border-radius: 0.25rem;
 }
 .button-primary:hover {
+    transition: 0.25s ease-in-out;
     transition: 0.5s ease;
-    opacity: .8;
+    background-color: var(--brown4);
 }
 
 .button-secondary {
+    transition: 0.25s ease-in-out;
     box-sizing: border-box;
     cursor: pointer;
     transition: 0.5s ease;
     background-color: transparent;
-    border: 1px solid var(--accent1);
-    color: var(--accent1);
+    border: 1px solid var(--brown3);
+    color: var(--brown3);
     box-shadow: none;
     padding: 0.5rem 1.25rem;
     font-size: 0.9rem;
@@ -40,18 +45,20 @@
     border-radius: 0.25rem;
 }
 .button-secondary:hover {
+    transition: 0.25s ease-in-out;
     transition: 0.5s ease;
-    background-color: var(--accent1);
+    background-color: var(--brown3);
+    border: 1px solid transparent;
     color: var(--pure-white);
-    opacity: .8;
 }
 
 .button-text {
+    transition: 0.25s ease-in-out;
     box-sizing: border-box;
     cursor: pointer;
     transition: 0.5s ease;
     background-color: transparent;
-    color: var(--accent1);
+    color: var(--brown3);
     border: 1px solid transparent;
     box-shadow: none;
     padding: 0.5rem 1.25rem;
@@ -60,7 +67,8 @@
     border-radius: 0.25rem;
 }
 .button-text:hover {
+    transition: 0.25s ease-in-out;
     transition: 0.5s ease;
-    border: 1px solid var(--accent1);
+    border: 1px solid var(--brown3);
     opacity: .8;
 }
