@@ -3,37 +3,42 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Website Test</title>
+        <title>piKopi | Your best coffee in town</title>
         <link rel="stylesheet" href="style/component.css" />
         <link rel="stylesheet" href="style/global.css" />
     </head>
     <body>
-        <header class="header-container">
-            <div class="company-name">
-                <h3>piKopi</h3>
-            </div>
-            <nav class="navbar">
-                <ul class="navbar-menu">
-                    <li class="menu">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="menu">
-                        <a href="#">Contact</a>
-                    </li>
-                    <li class="menu">
-                        <a href="#">Products</a>
-                    </li>
-                </ul>
+        <header class="header-container" id="header">
+            <nav class="header-content">
+                <div class="company-name">
+                    <h3>piKopi</h3>
+                </div>
+                <div class="navbar-menu-container">
+                    <ul class="navbar-menu">
+                        <li class="menu">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="menu">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="menu">
+                            <a href="#">Products</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cta-button">
+                    <button class="button-text button-white">Register</button>
+                    <button class="button-primary">Login</button>
+                </div>
             </nav>
-            <div class="cta-button">
-                <button class="button-text button-white">Register</button>
-                <button class="button-primary">Login</button>
-            </div>
         </header>
         <main class="main-container">
             <section class="hero">
                 <aside class="hero-image">
-                    <img src="./assets/hero-coffee.png" alt="" />
+                    <img
+                        src="./assets/hero-coffee.png"
+                        alt="hero-coffee-image"
+                    />
                 </aside>
                 <div class="hero-detail">
                     <h1>piKopi.</h1>
@@ -54,9 +59,115 @@
                     </div>
                 </div>
             </section>
-            <section id="products" class="coffee-product">
-                <h2 class="section-title">Our Products Lineup</h2>
-                <div class="product-card"></div>
+            <section class="coffee-product">
+                <h1 class="section-title">Our Product!</h1>
+                <div class="product-list">
+                    <article class="product-card">
+                        <aside>
+                            <img
+                                src="/assets/coffee-americano.png"
+                                alt="Americano"
+                            />
+                        </aside>
+                        <div class="product-detail">
+                            <div>
+                                <h3>Americano</h3>
+                                <p>Rp18.000,00</p>
+                            </div>
+                            <button class="button-primary">Order</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <aside>
+                            <img
+                                src="/assets/coffee-americano.png"
+                                alt="Americano"
+                            />
+                        </aside>
+                        <div class="product-detail">
+                            <div>
+                                <h3>Americano</h3>
+                                <p>Rp18.000,00</p>
+                            </div>
+                            <button class="button-primary">Order</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <aside>
+                            <img
+                                src="/assets/coffee-americano.png"
+                                alt="Americano"
+                            />
+                        </aside>
+                        <div class="product-detail">
+                            <div>
+                                <h3>Americano</h3>
+                                <p>Rp18.000,00</p>
+                            </div>
+                            <button class="button-primary">Order</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <aside>
+                            <img
+                                src="/assets/coffee-americano.png"
+                                alt="Americano"
+                            />
+                        </aside>
+                        <div class="product-detail">
+                            <div>
+                                <h3>Americano</h3>
+                                <p>Rp18.000,00</p>
+                            </div>
+                            <button class="button-primary">Order</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <aside>
+                            <img
+                                src="/assets/coffee-americano.png"
+                                alt="Americano"
+                            />
+                        </aside>
+                        <div class="product-detail">
+                            <div>
+                                <h3>Americano</h3>
+                                <p>Rp18.000,00</p>
+                            </div>
+                            <button class="button-primary">Order</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="about">
+                <div class="about-detail">
+                    <div class="sub-detail">
+                        <h1 class="section-title">About us.</h1>
+                        <p>
+                            At piKopi, we're not just about coffee; we're about
+                            creating memorable moments, fostering connections,
+                            and indulging in the simple pleasures of life. Our
+                            passion for the perfect cup of coffee drives us to
+                            source the finest beans, carefully craft each brew,
+                            and provide a warm and inviting space for you to
+                            savor it.
+                        </p>
+                    </div>
+                    <div class="sub-detail">
+                        <h1 class="section-title">Our story.</h1>
+                        <p>
+                            Founded in 2023, piKopi was born out of a deep love
+                            for coffee and a desire to share that love with our
+                            community. We've always believed that great coffee
+                            should be accessible to everyone, and that's why
+                            we've dedicated ourselves to serving exceptional
+                            coffee at affordable prices.
+                        </p>
+                    </div>
+                </div>
+                <aside>
+                    <img src="/assets/about-us.jpg" alt="about-us-image" />
+                </aside>
             </section>
         </main>
         <footer class="footer-container"></footer>
